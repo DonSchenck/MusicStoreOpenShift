@@ -17,7 +17,7 @@ namespace MusicStore
             var builder = new WebHostBuilder()
                 .UseConfiguration(config)
                 .UseIISIntegration()
-                .UseStartup("MusicStore").UseUrls("https://*:5000");
+                .UseStartup("MusicStoreOpenShift").UseUrls("http://*:5000");
 
             if (string.Equals(builder.GetSetting("server"), "Microsoft.AspNetCore.Server.WebListener", System.StringComparison.Ordinal))
             {
