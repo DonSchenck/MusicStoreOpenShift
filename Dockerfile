@@ -10,5 +10,5 @@ RUN /dotnet/dotnet restore
 
 EXPOSE 5000
 
-CMD /dotnet/dotnet run
+CMD /dotnet/dotnet run --framework netcoreapp1.0
 
